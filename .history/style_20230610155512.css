@@ -1,0 +1,35 @@
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #ff3366;
+    color: #fff;
+    text-align: center;
+    line-height: 200px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .box:hover {
+    background-color: #cc0044;
+  }
+  
+  .box.active {
+    background-color: #3366ff;
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #3366ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background-color: #0033cc;
+  }
+
+  
+  
