@@ -182,17 +182,20 @@ footer {
     font-size: 20px;
 }
 
+
+
 footer a {
-    
-        box-shadow: inset 0 0 0 0 #54b3d6;
+        box-shadow: inset 0 0 0 0 
+        #aac8ff;
         color: white;
         margin: 0 -.25rem;
-        padding: 0 .25rem;
+        padding: 10px;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+        font-size: 30px;
 }
 
 footer a:hover {
-    box-shadow: inset 100px 0 0 0 #54b3d6;
+    box-shadow: inset 100px 0 0 0 #bd78ff;
     color: white;
 }
 
