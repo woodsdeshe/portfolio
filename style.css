@@ -89,22 +89,26 @@ body:not(.container) {
     margin-top: 20px;
 }
 
+
 .about-me {
-    padding: 1rem;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about-container {
     display: flex;
     align-items: center;
+    margin: 0 2rem;
 }
 
-.about-me h2 {
-    text-decoration: underline;
-    border-right: 2px solid white;
-    padding-right: 10px;
+.logo img {
+    height: 80px;
+    width: 80px;
 }
 
-.about-me p {
-    border-right: 2px solid white;
-    padding: 1rem;
+.about-content {
+    margin-left: 1rem;
 }
 
 .portfolio-header, .skills-header, .contact h2 {
@@ -163,7 +167,24 @@ footer a {
         padding: 0 .25rem;
         transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-    footer a:hover {
-        box-shadow: inset 100px 0 0 0 #54b3d6;
-        color: white;
-      }
+
+footer a:hover {
+    box-shadow: inset 100px 0 0 0 #54b3d6;
+    color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .about-me {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-container {
+        margin: 1rem 0;
+    }
+
+    .about-content {
+        margin-left: 0;
+        margin-top: 1rem;
+    }
+}
