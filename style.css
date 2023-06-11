@@ -78,6 +78,7 @@ body:not(.container) {
 .navbar a:hover {
     background-color: #b46bff;
     border-radius: 5px;
+    transition: background-color 0.3s ease; 
 }
 
 
@@ -89,6 +90,7 @@ body:not(.container) {
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -125,7 +127,26 @@ body:not(.container) {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 40px;
 }
+
+.skill {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 10px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    text-decoration: none;
+    color: #ddd; 
+    border-radius: 4px;
+    transition: background-color 0.3s ease; 
+  }
+  
+  .skill:hover {
+    background-color: #b46bff; 
+    cursor: pointer;
+  }
+  
 
 .portfolio {
     display: flex;
@@ -176,6 +197,15 @@ footer a:hover {
 }
 
 @media screen and (max-width: 768px) {
+.container {
+        min-height: auto;
+        height: 100vh;
+    }
+    .container video {
+        height: auto;
+        width: 100%;
+    }
+
     .about-me {
         flex-direction: column;
         align-items: center;
