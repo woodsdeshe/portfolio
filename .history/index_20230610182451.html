@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DeShe Woods - Portfolio</title>
+  <style>
+    /* Brand colors */
+    :root {
+      --primary-color: #F72585;
+      --secondary-color: #7209B7;
+      --accent-color: #3A0CA3;
+      --highlight-color: #4361EE;
+      --complementary-color: #4CC9F0;
+    }
+
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      list-style-type: disc;
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    .skill {
+      background-color: var(--secondary-color);
+      color: #fff;
+      padding: 5px 10px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .experience {
+      margin-bottom: 30px;
+    }
+
+    .experience .year {
+      font-weight: bold;
+    }
+
+    .experience .position {
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .experience .company {
+      color: var(--secondary-color);
+    }
+
+    .education {
+      margin-bottom: 30px;
+    }
+
+    .education .degree {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 5px;
+    }
+
+    .education .university {
+      color: var(--secondary-color);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .contact-links a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      padding: 8px 15px;
+      background-color: var(--secondary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    /* Dynamic effects */
+    @keyframes fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    .fade-in {
+      animation: fade-in 1s ease-in-out;
+    }
+
+    /* Responsive styles */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="fade-in">DeShe Woods</h1>
+    <p class="fade-in">Grand Rapids, MI</p>
+    <p class="fade-in">313-969-6169 | woodsdeshe94@gmail.com</p>
+    <div class="contact-links fade-in">
+      <a href="#">LinkedIn Profile</a>
+      <a href="#">Github</a>
+      <a href="#">Portfolio</a>
+    </div>
+
+    <h2 class="fade-in">Recent fellow of Interapt's Java immersive program</h2>
+    <p class="fade-in">With experience in modifying existing software systems and contributing to project development. Skilled in Spring Boot, Java, PostgreSQL, HTML, CSS, JavaScript, and Vue.js and used those skills to build fully functioning web applications using Angular and Java.</p>
+
+    <h3 class="fade-in">Technical Skills</h3>
+    <div class="skills fade-in">
+      <span class="skill">Spring Boot</span>
+      <span class="skill">Java</span>
+      <span class="skill">PostgreSQL</span>
+      <span class="skill">HTML</span>
+      <span class="skill">CSS</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">Vue.js</span>
+      <span class="skill">Responsive Design</span>
+      <span class="skill">IntelliJ</span>
+      <span class="skill">Git</span>
+      <span class="skill">Unit Testing (JUnit)</span>
+      <span class="skill">E/R diagrams</span>
+      <span class="skill">Integration Testing</span>
+      <span class="skill">Unix</span>
+      <span class="skill">Angular</span>
+      <span class="skill">Postman</span>
+      <span class="skill">MVC</span>
+      <span class="skill">Relational Databases</span>
+    </div>
+
+    <h3 class="fade-in">Technical Experience</h3>
+    <div class="experience fade-in">
+      <p class="year">2023</p>
+      <p class="position">Interapt Full Stack Software Engineering Immersive Fellow</p>
+      <p class="company">Interapt, Remote</p>
+      <ul>
+        <li>Completed a 13-week full-stack immersive learning how to create fully functional web-based software systems using Java and Angular.</li>
+        <li>Follicare Full Stack Application: Designed full stack Java application that lets users with hair disorders find specialists and resources that can help them manage their disorder.</li>
+        <li>Tic Tac Toe: Designed Javascript application that lets users play multiple rounds of tic tac toe.</li>
+        <li>Job Board API: Designed REST API that allows users to register, login, and use CRUD endpoints for postings, job searching, and managing job applications.</li>
+      </ul>
+    </div>
+
+    <h3 class="fade-in">Professional Experience</h3>
+    <div class="experience fade-in">
+      <p class="year">2021 - 2022</p>
+      <p class="position">Program Manager</p>
+      <p class="company">Playworks, Kalamazoo MI</p>
+      <ul>
+        <li>Collaborated with other departments and organizations to ensure that projects are integrated and aligned with overall goals and objectives.</li>
+        <li>Condensed project management processes using Asana that resulted in a 20% increase in project completion rate within the first 6 months.</li>
+      </ul>
+    </div>
+    <div class="experience fade-in">
+      <p class="year">2019 - 2021</p>
+      <p class="position">Program Manager</p>
+      <p class="company">The City of Wyoming, Wyoming MI</p>
+      <ul>
+        <li>Developed and implemented project plans, timelines, and budgets for educational projects.</li>
+        <li>Managed a $5,000 budget for educational projects that resulted in an 18% cost savings while still delivering all projects within the timeline.</li>
+      </ul>
+    </div>
+    <div class="experience fade-in">
+      <p class="year">2016 - 2019</p>
+      <p class="position">Program Coordinator</p>
+      <p class="company">Boys and Girls Club of Kalamazoo, Kalamazoo MI</p>
+      <ul>
+        <li>Successfully delivered visual arts projects within scope, on time, and within budget, and created and managed budgets for projects.</li>
+        <li>Successfully delivered 10 visual arts projects that received positive feedback from 95% of participants.</li>
+      </ul>
+    </div>
+
+    <h3 class="fade-in">Education</h3>
+    <div class="education fade-in">
+      <p class="degree">Tech Elevator - Java Developer</p>
+      <p class="university">Completed a 30-week full-stack coding boot camp learning how to create dynamic web-based software systems using Java providing 700+ hours of development education and application.</p>
+    </div>
+    <div class="education fade-in">
+      <p class="degree">Western Michigan University - BA in Art</p>
+      <p class="university">Fall 2018</p>
+    </div>
+  </div>
+</body>
+</html>

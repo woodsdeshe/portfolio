@@ -1,0 +1,373 @@
+@font-face {
+    font-family: "Suissnord";
+    src: url('../../../Suissnord.otf');
+    font-family: "Aspace";
+    src: url(../../../aspace_light_demo.otf);
+  }
+  
+  /* Reset some default styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #000;
+    color: #fff;
+    font-family: "Aspace", sans-serif;
+  }
+  
+  header {
+    background-color: #222;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+  }
+  
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header nav ul li {
+    margin: 0 10px;
+  }
+  
+  header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a:hover {
+    color: #ff00ff;
+  }
+  
+  main {
+    padding-top: 80px;
+  }
+  
+  #hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #4c2a4f;
+    background-image: linear-gradient(45deg, #6d4687 0%, #4c2a4f 100%);
+  }
+  
+  #hero h1 {
+    font-family: "Suissnord", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    margin-bottom: 16px;
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
+  
+  #hero h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 32px;
+    color: #fff;
+  }
+  
+  #hero p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 48px;
+    color: #fff;
+  }
+  
+  #hero .cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  #hero .cta-button:hover {
+    background-color: #cc00cc;
+  }
+  
+  #about {
+    background-color: #333;
+    padding: 80px 0;
+  }
+  
+  #about h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  #about p {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  #about .social-links {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #about .social-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+    font-size: 18px;
+  }
+  
+  #skills {
+    background-color: #444;
+    padding: 80px 0;
+  }
+  
+  #skills h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  #skills ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    list-style-type: none;
+  }
+  
+  #skills ul li {
+    background-color: #555;
+    padding: 20px;
+    border-radius: 4px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #projects {
+    background-color: #555;
+    padding: 80px 0;
+  }
+  
+  #projects h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .projects-content {
+    display: grid;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .project {
+    background-color: #777;
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .project h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .project p {
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .project a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  #experience {
+    background-color: #666;
+    padding: 80px 0;
+  }
+  
+  #experience h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .experience-content {
+    display: grid;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .job {
+    background-color: #888;
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .job h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .job h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .job-date {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .job ul {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .job ul li {
+    margin-bottom: 5px;
+  }
+  
+  #education {
+    background-color: #777;
+    padding: 80px 0;
+  }
+  
+  #education h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .education-content {
+    display: grid;
+    gap: 40px;
+    padding: 0 20px;
+  }
+  
+  .education {
+    background-color: #888;
+    padding: 20px;
+    border-radius: 4px;
+    color: #fff;
+  }
+  
+  .education h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  
+  .education h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .education-date {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+  }
+  
+  .education ul {
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  .education ul li {
+    margin-bottom: 5px;
+  }
+  
+  #contact {
+    background-color: #888;
+    padding: 80px 0;
+  }
+  
+  #contact h2 {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #fff;
+  }
+  
+  .contact-form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .contact-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff00ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #cc00cc;
+  }
+  
+  .footer {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
