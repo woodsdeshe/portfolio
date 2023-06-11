@@ -18,6 +18,7 @@ body:not(.container) {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  margin-top: 60px;
 }
 
 .container video {
@@ -54,9 +55,14 @@ body:not(.container) {
 }
 
 .navbar {
-  background-color: #000;
+  background-color: #000000b9;
   padding: 1rem;
   text-align: center;
+  position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 9999;
 }
 
 .navbar ul {
